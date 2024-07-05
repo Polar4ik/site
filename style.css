@@ -1,0 +1,19 @@
+body {
+    background-color: #FF7F3E;
+}
+
+pre {
+    color: #FFF6E9;
+    white-space: pre-wrap;
+}
+
+#centered-div {
+    background-color: #80C4E9;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    margin-top: 15%;
+    justify-content: center;
+    display: flex;
+    border: solid #604CC3;
+}
