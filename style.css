@@ -17,3 +17,9 @@ pre {
     display: flex;
     border: solid #604CC3;
 }
+
+.link {
+    position: fixed;
+    float: right;
+    right: 16px;
+}
