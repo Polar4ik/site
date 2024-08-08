@@ -22,4 +22,11 @@ pre {
     position: fixed;
     float: right;
     right: 16px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.link:hover{
+    cursor: pointer;
 }
