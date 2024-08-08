@@ -1,13 +1,13 @@
-body {
-    background-color: #FF7F3E;
-}
-
-pre {
+#text-info {
     color: #FFF6E9;
     white-space: pre-wrap;
 }
 
-#centered-div {
+.orange {
+    background-color: #FF7F3E;
+}
+
+.centered-div {
     background-color: #80C4E9;
     margin: auto;
     width: 50%;
@@ -22,6 +22,9 @@ pre {
     position: fixed;
     float: right;
     right: 16px;
+
+    color: inherit;
+
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
