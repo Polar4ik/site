@@ -10,3 +10,18 @@ function traslation(id) {
         element.innerHTML = 'Ahoj, já jsem Polar4ik(Polarčik) a já idiot,\njsem udělám podivné věci jako je tento\nvy můžete se podívat na můj <a href="https://github.com/Polar4ik">github</a> nebo <a href="https://polar4ik.itch.io/">itch.io</a> se na ně podívat'
     }
 }
+
+
+document.querySelectorAll('.photo img').forEach(image => {
+    image.addEventListener('click', () => {
+        const overlay = document.getElementById('overlay');
+        const fullImage = document.getElementById('fullImage');
+        fullImage.src = image.src;
+        overlay.style.display = 'flex';
+    }, false);
+});
+
+document.getElementById('overlay').addEventListener('click', () => {
+    const overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
+}, false);
