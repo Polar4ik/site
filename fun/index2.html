@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoidSpace</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #121212;
+    }
+
+    .particle {
+      position: absolute;
+      color: #ffffff;
+      font-size: 25px;
+      animation: floatParticle linear infinite;
+    }
+
+    @keyframes floatParticle {
+      0% {
+        transform: translateX(0) translateY(0);
+      }
+
+      100% {
+        transform: translateX(var(--moveX)) translateY(var(--moveY));
+      }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const numParticles = 100;
+
+    function randomPosition() {
+       return Math.random() * 100 - 50 + 'vw';
+    }
+
+    function setRandomMovement(particle) {
+        particle.style.setProperty('--moveX', randomPosition());
+        particle.style.setProperty('--moveY', randomPosition());
+    }
+
+    for (let i = 0; i < numParticles; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.textContent = '*';
+      particle.style.left = Math.random() * 100 + 'vw';
+      particle.style.top = Math.random() * 100 + 'vh';
+      //particle.style.fontSize = 8 + Math.random() * 12 + 'px';
+      particle.style.animationDuration = 8 + Math.random() * 12 + 's';
+
+      setRandomMovement(particle);
+      particle.addEventListener('animationiteration', () => setRandomMovement(particle));
+
+      document.body.appendChild(particle);
+    }
+  </script>
+</body>
+</html>
