@@ -1,4 +1,17 @@
+document.addEventListener('DOMContentLoaded', function() {
+    let chosenLanguage = localStorage.getItem('chosenLanguage');
+    
+    if (chosenLanguage) {
+        console.log(`Выбранный язык: ${chosenLanguage}`);
+        traslation(chosenLanguage)
+    } else {
+        console.log('Язык не выбран, используется язык по умолчанию.');
+    }
+});
+
+
 function traslation(id) {
+    localStorage.setItem('chosenLanguage', id);
     let element = document.getElementById("text-info")
     if (id == 0) {
         element.innerHTML = "Hi, i'm Polar4ik(Polarchik) and i'm idiot,\ni made a strange things like this\n<a href='https://github.com/Polar4ik'>github</a> <a href='https://polar4ik.itch.io/'>itch.io</a>"
