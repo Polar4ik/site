@@ -20,7 +20,7 @@ function traslation(id) {
         element.innerHTML = 'Привет, я Polar4ik(Полярчик) и я идиот,\nя делаю разные вещи по типу этого\n<a href="https://github.com/Polar4ik">github</a> <a href="https://polar4ik.itch.io/">itch.io</a>'
     }
     if (id == 2) {
-        element.innerHTML = 'Ahoj, jsem Polar4ik(Polarčik) a já idiot,\njsem udělám podivné věci jako je tento\<a href="https://github.com/Polar4ik">github</a> <a href="https://polar4ik.itch.io/">itch.io</a>'
+        element.innerHTML = 'Ahoj, jsem Polar4ik(Polarčik) a já idiot,\njsem udělám podivné věci jako je tento\n<a href="https://github.com/Polar4ik">github</a> <a href="https://polar4ik.itch.io/">itch.io</a>'
     }
 }
 
