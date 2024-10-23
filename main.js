@@ -25,16 +25,18 @@ function traslation(id) {
 }
 
 
-document.querySelectorAll('.photo img').forEach(image => {
-    image.addEventListener('click', () => {
-        const overlay = document.getElementById('overlay');
-        const fullImage = document.getElementById('fullImage');
-        fullImage.src = image.src;
-        overlay.style.display = 'flex';
-    }, false);
-});
+function selectRandomDoc() {
+    const files = [
+        "./fun/dust.html",
+        "fun/snow.html",
+        "fun/snowndust.html",
+        "fun/normal.html",
+    ]
 
-document.getElementById('overlay').addEventListener('click', () => {
-    const overlay = document.getElementById('overlay');
-    overlay.style.display = 'none';
-}, false);
+    const randomIndex = Math.floor(Math.random() * files.length);
+    const randomFile = files[randomIndex];
+
+    console.log(randomFile);
+
+    window.location.href = randomFile;
+}
