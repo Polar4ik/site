@@ -25,7 +25,7 @@ function traslation(id) {
 }
 
 
-function selectRandomDoc() {
+/*function selectRandomDoc() {
     const files = [
         "./fun/dust.html",
         "fun/snow.html",
@@ -36,7 +36,5 @@ function selectRandomDoc() {
     const randomIndex = Math.floor(Math.random() * files.length);
     const randomFile = files[randomIndex];
 
-    console.log(randomFile);
-
     window.location.href = randomFile;
-}
+}*/
