@@ -25,7 +25,7 @@
     <u>p</u>
 </a>
 
-<a class="link", style="top: 146px;", onclick="selectRandomDoc()">
+<a class="link" style="top: 146px;" href="javascript:void(0);" onclick="selectRandDoc()">
     <u>t</u>
 </a>
 
