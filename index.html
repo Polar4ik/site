@@ -37,5 +37,17 @@ i made a strange things like this.
 </pre>
 </div>
 
+<script>
+    function selectRandomDoc() {
+	fetch('rand_fun_page.php')
+	    .then(response => response.text())
+	    .then(data => {
+		if (data) {
+		    window.location.href = data;
+		}
+	    });
+    }
+</script>
+
 </body>
 </html>
