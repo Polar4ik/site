@@ -1,5 +1,5 @@
 <?php
-$imgfolder = 'img/';
+$imgfolder = 'phtoes/';
 $images = scandir($imgfolder);  
 
 foreach ($images as $image) {

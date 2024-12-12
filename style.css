@@ -1,6 +1,7 @@
 .text {
     color: #FFF6E9;
     white-space: pre-wrap;
+    text-align: center;  /* Центрируем текст внутри блока */
 }
 
 .orange {
@@ -10,11 +11,14 @@
 .centered-div {
     background-color: #80C4E9;
     margin: auto;
-    width: 50%;
+    width: 50%;  /* Ширина блока с контентом */
     padding: 10px;
-    margin-top: 15%;
+    margin-top: 15%;  /* Расстояние от верхней части экрана */
     justify-content: center;
+    align-items: center;  /* Центрирование по вертикали */
     display: flex;
+    flex-direction: column;  /* Элементы выстраиваются вертикально */
+    text-align: center;  /* Центрируем все содержимое внутри */
     border: solid #604CC3;
 }
 
@@ -22,18 +26,15 @@
     position: fixed;
     float: right;
     right: 16px;
-
     color: inherit;
-
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.link:hover{
+.link:hover {
     cursor: pointer;
 }
-
 
 .gallery {
     display: flex;
@@ -69,3 +70,17 @@
     max-width: 90%;
     max-height: 90%;
 }
+
+/* Для блока с изображением */
+.image-container {
+    margin-top: 20px;  /* Отступ сверху для изображения */
+    display: flex;
+    justify-content: center;  /* Центрируем изображение */
+    align-items: center;  /* Центрируем изображение по вертикали */
+}
+
+.image-container img {
+    max-width: 50%;  /* Максимальная ширина изображения */
+    height: auto;
+}
+
